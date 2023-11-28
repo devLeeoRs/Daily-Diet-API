@@ -1,0 +1,35 @@
+{
+  "name": "daily-diet-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "knex -- migrate:latest",
+    "knex": "node --no-warnings --import tsx ./node_modules/knex/bin/cli.js",
+    "lint": "eslint src --ext .ts --fix",
+    "dev": "tsx watch src/server.ts",
+    "test": "vitest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^2.1.0",
+    "@types/node": "^20.9.4",
+    "eslint": "^8.54.0",
+    "sqlite3": "^5.1.6",
+    "supertest": "^6.3.3",
+    "tsx": "^4.4.0",
+    "typescript": "^5.3.2",
+    "vitest": "^0.34.6"
+  },
+  "dependencies": {
+    "@fastify/cookie": "^9.2.0",
+    "@types/bcrypt": "^5.0.2",
+    "@types/supertest": "^2.0.16",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "fastify": "^4.24.3",
+    "knex": "^3.0.1",
+    "zod": "^3.22.4"
+  }
+}
